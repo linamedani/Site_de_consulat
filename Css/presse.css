@@ -1,0 +1,98 @@
+   /* Container Principal */
+   .presse-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+/* Titre principal */
+.presse-container h1 {
+    color: #3E654D;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    border-left: 5px solid #3E654D;
+    padding-left: 15px;
+    font-size: 2.1em;
+}
+
+/* Sections */
+.presse-section {
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 2px 4px 12px #3E654D;
+    display: flex;
+    align-items: center;  /* Centrer verticalement l'image et le texte */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.presse-section:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Titre des sections */
+.presse-section h2 {
+    color: #3E654D;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-align: left;
+}
+
+/* Texte des sections */
+.presse-section p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #4f4f4f;
+    width: 60%;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Images à côté du texte */
+.presse-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presse-image img,
+.presse-image iframe {
+    width: 100%;
+    max-height: 250px; /* Fixer une hauteur maximale pour toutes les images */
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Alignement vertical centré pour le texte */
+.presse-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .presse-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .presse-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .presse-section p {
+        width: 100%;
+    }
+}

@@ -1,0 +1,72 @@
+
+/* Style général de la page */
+.culture-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Titre principal */
+.culture-container h1 {
+    text-align: center;
+    color: #3E654D;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Section de la culture */
+.culture-section {
+   
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.culture-section h2 {
+    color: #3E654D;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.culture-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Carrousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Effet de défilement automatique */
+.carousel:hover .carousel-images {
+    animation: scroll 15s infinite linear;
+}
+
+/* Animation du défilement */
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}

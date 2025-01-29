@@ -1,0 +1,75 @@
+/* Section pour le formulaire de connexion */
+.form-container {
+    width: 24%;
+    max-width: 500px;
+    margin: 80px auto;
+    
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #3E654D; /* Bordure verte autour du formulaire */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+
+h2 {
+    text-align: center;
+    color: #3E654D;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+}
+
+/* Style pour les champs de saisie */
+.form-group input {
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    margin-bottom: 5px;
+    background: transparent;
+    
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.form-group input:focus {
+    border-color: #3E654D;
+}
+
+/* Style du bouton */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3E654D;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2D4D3A;
+}
+
+/* Lien vers l'inscription */
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: #3E654D;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

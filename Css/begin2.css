@@ -1,0 +1,123 @@
+
+
+/* En-tête */
+header {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3E654D;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center; /* Aligner verticalement les éléments */
+    justify-content: space-between; /* Espacement entre le logo et la nav */
+}
+
+
+/* Conteneur du logo et du texte */
+header .logo {
+    display: flex;
+    align-items: center; /* Aligner le logo et le texte sur la même ligne */
+    gap: 10px; /* Ajoute un petit espace entre le logo et le texte */
+    
+}
+
+/* Image du logo (le drapeau) */
+header .logo img {
+    width: 60px; /* Largeur du logo */
+    height: auto; /* Laisser la hauteur auto pour conserver les proportions */
+    transition: transform 0.3s ease;
+}
+/* Effet de zoom au survol du logo */
+header .logo img:hover {
+    transform: scale(1.1);  /* Agrandir légèrement l'image lors du survol */
+}
+
+/* Texte sous le logo */
+header .logo-text {
+    display: flex;
+    flex-direction: column;  /* Met le texte sur 2 lignes */
+    text-align: left; /* Aligné à gauche */
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+header .logo-text p {
+    margin: 0; /* Supprimer la marge par défaut autour des paragraphes */
+    line-height: 1.1; /* Ajuster l'espace entre les lignes */
+    
+}
+
+/* Menu de navigation */
+header nav {
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Espacement entre les éléments du menu */
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Lien du logo : pour enlever le soulignement et changer la couleur */
+header .logo a {
+    text-decoration: none; /* Retirer le soulignement du lien */
+    color: inherit; /* Le lien prendra la couleur du texte parent */
+}
+
+header .logo a:hover {
+    opacity: 0.8; /* Effet de transparence léger au survol */
+}
+/* Style pour le bouton de profil */
+.profile-icon {
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding: 0 10px;
+    position: relative;
+}
+
+/* Menu profil en overlay */
+.profile-container {
+    position: relative;
+}
+
+/* Menu profil avec fond vert transparent */
+.profile-menu {
+    position: absolute;
+    top: 40px; /* Ajustez pour positionner le menu sous l'icône */
+    right: 0;
+    background-color: rgba(62, 101, 77, 0.8); /* Vert transparent (80% d'opacité) */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none; /* Masqué par défaut */
+    z-index: 1000;
+    width: 150px;
+    color: white; /* Texte en blanc pour un meilleur contraste */
+}
+
+.profile-menu p, .profile-menu a {
+    margin: 0;
+    color: white; /* Couleur du texte en blanc */
+   
+}
+
+.profile-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin-top: 8px;
+    
+}
+
+.profile-menu a:hover {
+    color: #cce7cc; /* Couleur de survol plus claire */
+    font-weight: bolder;
+}

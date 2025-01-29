@@ -1,0 +1,123 @@
+/* Global styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; /* Full screen height */
+}
+
+
+/* Form container */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+/* Form heading */
+h2 {
+    text-align: center;
+    color: #3E654D;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    font-size: 1.1em;
+    color: #3E654D;
+    margin-bottom: 5px;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #3E654D;
+    outline: none;
+    box-shadow: 0 0 5px rgba(62, 101, 77, 0.5);
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #3E654D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2d4e39;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+    input[type="submit"] {
+        padding: 12px;
+    }
+}
+.error-messages {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.error-messages ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.error-messages li {
+    margin-left: 10px;
+}
+.payment-notice {
+    font-size: 1em;
+    color: #3E654D;
+    background-color: #f0f8f5;
+    padding: 10px 15px;
+    border: 1px solid #3E654D;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}

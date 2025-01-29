@@ -1,0 +1,26 @@
+/* Pied de page */
+footer {
+    background-color: #3E654D;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .contact-info p,
+footer .footer-links a {
+    color: #fff;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+}
+

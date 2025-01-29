@@ -1,0 +1,86 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    text-align: center; /* Centre le texte horizontalement */
+    margin-top: 50px; /* Ajoute un espacement en haut de la page */
+    color: #3E654D;
+}
+h6{
+    text-align: center; /* Centre le texte horizontalement */
+    margin-top: 10px; /* Ajoute un espacement en haut de la page */
+    font-size: 1em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Centre les cartes horizontalement */
+    align-items: center; /* Centre les cartes verticalement */
+    gap: 40px;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: rgba(62, 101, 77, 0.8); /* Couleur avec opacité pour un effet de transparence */
+    color: white;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Effet d'agrandissement au survol */
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Ajuste l'image pour remplir l'espace sans distorsion */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    text-align: center; /* Centre le titre dans la carte */
+}
+
+.card p {
+    font-size: 0.9em;
+    padding: 0 10px;
+}
+
+.card-button {
+    display: inline-block;
+    margin: 15px 0;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    color: #3E654D;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.card-button:hover {
+    background-color: #cce7cc; /* Couleur de survol */
+}
+/* Suppression de la couleur bleue et du soulignement pour les liens */
+.confirmation-message a {
+    color: #3E654D; /* La même couleur que le texte de votre page */
+    text-decoration: none; /* Enlève le soulignement */
+    font-weight: bold; /* Pour rendre le lien plus visible */
+    transition: color 0.2s ease; /* Transition douce pour l'effet au survol */
+}
+
+/* Effet au survol du lien */
+.confirmation-message a:hover {
+    color: #cce7cc; /* Couleur de survol (vous pouvez ajuster selon vos préférences) */
+    text-decoration: underline; /* Ajouter un soulignement au survol, pour l'effet visuel */
+}

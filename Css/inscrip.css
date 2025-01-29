@@ -1,0 +1,71 @@
+/* Formulaire global */
+.form-container {
+    width: 27%;
+    max-width: 500px;
+    margin: 40px auto;
+    
+    padding: 30px;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #3E654D; /* Bordure verte autour du formulaire */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+
+h2 {
+    text-align: center;
+    color: #3E654D;
+    font-size: 1.5em;
+}
+
+/* Groupe de champs */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    background: transparent;
+}
+
+.form-group input::placeholder {
+    color: #aaa;
+}
+
+.form-group input:focus {
+    border-bottom-color: #3E654D; /* Change la couleur de la ligne au focus */
+}
+
+/* Style du bouton */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3E654D;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.register-link a {
+    color: #3E654D;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
